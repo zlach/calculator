@@ -75,6 +75,9 @@ function addMe(){
         stored_number = stored_number.toString();
         built_number = "";
         last_operator = "+";
+    } else if (last_operator == "="){
+        built_number = "";
+        last_operator = "+";
     }
 }
 
@@ -101,6 +104,9 @@ function subtractMe(){
     } else if (last_operator == "x"){
         stored_number = parseInt(stored_number) * parseInt(built_number);
         stored_number = stored_number.toString();
+        built_number = "";
+        last_operator = "-";
+    } else if (last_operator == "="){
         built_number = "";
         last_operator = "-";
     }
@@ -131,6 +137,9 @@ function multiplyMe(){
         stored_number = stored_number.toString();
         built_number = "";
         last_operator = "x";
+    } else if (last_operator == "="){
+        built_number = "";
+        last_operator = "x";
     }
 }
 
@@ -159,6 +168,9 @@ function divideMe(){
         stored_number = stored_number.toString();
         built_number = "";
         last_operator = "/";
+    } else if (last_operator == "="){
+        built_number = "";
+        last_operator = "/";
     }
 }
 
@@ -167,7 +179,7 @@ function equalMe(){
         stored_number = built_number;
         document.querySelector("#screen").innerHTML = stored_number;
         built_number = "";
-        last_operator = "";
+        last_operator = "=";
     } else if (last_operator == "+"){
         console.log('b');
         stored_number = parseInt(stored_number) + parseInt(built_number);
@@ -176,24 +188,24 @@ function equalMe(){
         console.log(stored_number);
         document.querySelector("#screen").innerHTML = stored_number;
         built_number = "";
-        last_operator = "";
+        last_operator = "=";
     } else if (last_operator == "-"){
         stored_number = parseInt(stored_number) - parseInt(built_number);
         stored_number = stored_number.toString();
         document.querySelector("#screen").innerHTML = stored_number;
         built_number = "";
-        last_operator = "";
+        last_operator = "=";
     } else if (last_operator == "/"){
         stored_number = parseInt(stored_number) / parseInt(built_number);
         stored_number = stored_number.toString();
         document.querySelector("#screen").innerHTML = stored_number;
         built_number = "";
-        last_operator = "";
+        last_operator = "=";
     } else if (last_operator == "x"){
         stored_number = parseInt(stored_number) * parseInt(built_number);
         stored_number = stored_number.toString();
         document.querySelector("#screen").innerHTML = stored_number;
         built_number = "";
-        last_operator = "";
+        last_operator = "=";
     }
 }
