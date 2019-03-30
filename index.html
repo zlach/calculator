@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td id="screen" colspan="4"></td>
+            </tr>
+            <tr>
+                <td id="multiply" class="operator" onclick="receive(this, 'x');">x</td>
+                <td id="divide" class="operator" onclick="receive(this, '/');">/</td>
+                <td id="add" class="operator" onclick="receive(this, '+');">+</td>
+                <td id="subtract" class="operator" onclick="receive(this, '-');">-</td>
+            </tr>
+            <tr>
+                <td id="one" class="number" onclick="receive(this, '1');">1</td>
+                <td id="two" class="number" onclick="receive(this, '2');">2</td>
+                <td id="three" class="number" onclick="receive(this, '3');">3</td>
+                <td id="equal" class="operator" rowspan="4" onclick="receive(this, '=');">=</td>
+            </tr>
+            <tr>
+                <td id="four" class="number" onclick="receive(this, '4');">4</td>
+                <td id="five" class="number" onclick="receive(this, '5');">5</td>
+                <td id="six" class="number" onclick="receive(this, '6');">6</td>
+            </tr>
+            <tr>
+                <td id="seven" class="number" onclick="receive(this, '7');">7</td>
+                <td id="eight" class="number" onclick="receive(this, '8');">8</td>
+                <td id="nine" class="number" onclick="receive(this, '9');">9</td>
+            </tr>
+            <tr>
+                <td id="blank"></td>
+                <td id="zero" class="number" onclick="receive(this, '0');">0</td>
+                <td id="clear" class="operator" onclick="receive(this, 'ac');">ac</td>
+            </tr>
+        </table>
+        <script src="script.js"></script>
+    </body>
+</html>

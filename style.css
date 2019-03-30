@@ -1,0 +1,44 @@
+table{
+    border: 1px solid tomato;
+    width: 300px;
+    height: 400px;
+}
+td{
+    text-align: center;
+    border: 1px solid seagreen;
+}
+#screen{
+    text-align: right;
+    border: 1px solid seagreen;
+    transition-duration: .3s;
+}
+
+.number{
+    background-color: seashell;
+}
+    .number:hover{
+        background-color: #ffe6d5;
+        transition-duration: .3s;
+    }
+
+#clear{
+    background-color: #fcb2aa;
+}
+    #clear:hover{
+        background-color: #c8665b;
+        transition-duration: .3s;
+    }
+#equal{
+    background-color: lightsteelblue;
+}
+    #equal:hover{
+        background-color: #7b899b;
+        transition-duration: .3s;
+    }
+
+.operator{
+    background-color: #636F57;
+}
+    .operator:hover{
+        background-color: #5A6351;
+    }
